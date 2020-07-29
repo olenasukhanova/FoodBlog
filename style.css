@@ -464,9 +464,6 @@ body {
     padding-left: 10px;
 }
 
-.search-box input[type="text"]::-webkit-input-placeholder {
-    color: #9ba5a4;
-}
 
 .search_button {
     width: 30px;
@@ -493,9 +490,9 @@ body {
 .aim-photo .aim-img{
     background: url("images/bg_3.jpg") no-repeat;
     background-size: cover;
-   width:100%;
-   height:300px;
-   object-fit: cover;
+    width:100%;
+    height:300px;
+    object-fit: cover;
 }
 
 .aim-block {
@@ -581,7 +578,7 @@ body {
     line-height: 40px;
     text-align: left;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .subscribe-box input[type="text"]:first-child::-webkit-input-placeholder {
@@ -845,6 +842,9 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
     width: 300px;
     height: 400px;
 }
+.jqvmap-zoomin, .jqvmap-zoomout {
+    width:30px;
+}
 
 .jqvmap-zoomin, .jqvmap-zoomout {
     padding:0;
@@ -863,10 +863,7 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
 }
 
 .contact-window {
-   /* background-color: rgba(0, 0, 0, 0.03);
-   border: 1px solid rgba(0, 0, 0, 0.03);
-   border-radius: 2px;
-   width: 100%; */
+   width: 100%; 
 }
 
 .contact-form {
@@ -931,6 +928,9 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
     border: 2px solid #000;
     background-color: #000;
 }
+.social-section {
+    padding-top: 0px;
+}
 .social-info {
     padding-top: 0px;
     padding-bottom: 50px;
@@ -941,7 +941,7 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 .circle, .circle-four, .circle-two, .circle-three {
     width:100px;
