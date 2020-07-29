@@ -581,9 +581,6 @@ body {
     font-size: 16px;
 }
 
-.subscribe-box input[type="text"]:first-child::-webkit-input-placeholder {
-    color: #9ba5a4;
-}
 
 .subscribe_button {
     width: 110px;
@@ -594,8 +591,7 @@ body {
     border: 1px solid black;
     color:white;
     font-size: 20px;
-    padding:2px;
-    border-radius: 2px;
+    border-radius: 10px;
 
 }
 
@@ -972,6 +968,7 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
     padding-top: 30px;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
 }
 
 .block-circle p:nth-child(2) {
