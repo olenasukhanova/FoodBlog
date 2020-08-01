@@ -1184,6 +1184,11 @@ a.instagram:hover, a.facebook:hover,  a.twitter:hover{
 color:rgba(0, 0, 0, 0.8);
 }
 
+.side-bar-recipe h3 {
+    padding-top: 20px;
+}
+
+
 .side-bar-recipe p {
     line-height: 1.8;
     color:#999999;
@@ -1503,6 +1508,8 @@ color:rgba(0, 0, 0, 0.8);
         flex-direction: column;
         justify-content: center;
     }
+  
+    
 }
 
 /* laptop */
@@ -1560,6 +1567,9 @@ color:rgba(0, 0, 0, 0.8);
     #vmap {
         width: 450px;
         height: 400px;
+    }
+    .side-bar-recipe h3 {
+        padding-top: 0px;
     }
 }
 
