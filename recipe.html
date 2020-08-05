@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-
+ 
     <link rel="stylesheet" href="aos.css" />
     <link rel="stylesheet" href="style.css">
 
@@ -214,27 +214,26 @@
                                     <div class="comment-block">
                                         <h3> Leave a comment:</h3>
                                         <div class="contact-form-user">
-                                            <form action="mailto:asukhanova87@gmail.com">
+                                            <form action="">
                                                 <p>Name <span>*</span></p>
-                                                <div class="contacts-user">
-                                                    <input type="text" class=""></div>
-                                                    <p>Email<span>*</span></p>
-                                                    <div class="contacts-user">
-                                                    <input type="email" class="">
-                                                </div>
+                                                <div class="contacts-user" id="i1">
+                                                    <input type="text" class="" required></div>
+                                                    <p>Email <span>*</span></p>
+                                                    <div class="contacts-user"id="i2">
+                                                    <input type="email" class="" required></div>
                                                 <p>Subject</p>
-                                                <div class="contacts-user">
+                                                <div class="contacts-user" id="i3">
                                                     <input type="text" class="">
                                                 </div>
                                                 <p>Message</p>
-                                                <div class="textarea-bar-user">
+                                                <div class="textarea-bar-user" id="i4">
                                                     <textarea class=""></textarea>
                                                 </div>
             
-                                                <button class="send_message">Send message </button>
+                                                <button class="send_message"> Send message </button>
             
                                             </form>
-            
+                                            <div id="my_message3"></div>
                                         </div>
                                 </div>      
                             </div>
@@ -322,6 +321,7 @@
 
 
     <!-- ******** FOOTER ENDS ******** -->
+ 
 
     <script src="aos.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

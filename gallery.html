@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
+    <link href="dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css">
     <link href="lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="aos.css" />
     <link rel="stylesheet" href="style.css">
@@ -77,217 +77,370 @@
 
     <section class="features-posts" id="#">
         <div id="transcroller-body" class="aos-all">
-            <div class="aos-item" data-aos="fade-up">
-                <div class="container">
-                    <div class="row features-posts-section">
+        <div class="aos-item" data-aos="fade-up">
+        <div class="container">
+            <div class="row features-posts-section">
 
-                        <div class="col features_part_one col-xs-12 col-md-9 col-sm-12 col-lg-9">
-                            <div class="row">
-                                <div class="col col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                                    <p class="title_part"> Gallery posts<span>.</span></p>
-                                </div>
+                <div class="col features_part_one col-xs-12 col-md-9 col-sm-12 col-lg-9">
+                    <div class="row">
+
+                        <div class="col col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                            <p class="title_part"> Gallery posts<span>.</span></p>
+                            <div id="myBtnContainer">
+                                <button class="btn active-btn" onclick="filterSelection('all')"> Show
+                                    all</button>
+                                <button class="btn" onclick="filterSelection('pizza')"> Pizza Recipes</button>
+                                <button class="btn" onclick="filterSelection('main-dish')"> Main Dish
+                                    Recipes</button>
+                                <button class="btn" onclick="filterSelection('desserts')"> Desserts</button>
                             </div>
-                            <div class="row recent-stories_section">
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row recent-stories_section">
+                        <div class="col features_photos-row  main-dish  col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                            
+                                    <div class="features_photo">
+                                        <a href="images/image_6.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/image_6.jpg" alt=""> </a></div>
 
-                                        <div class="features_photo">
-                                            <a href="images/image_6.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/image_6.jpg" alt=""> </a></div>
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
-
-                             
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
-
-                              
-                                        <div class=" features_photo">
-                                            <a href="images/image_1.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/image_1.jpg" alt=""> </a></div>
-
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
-                                    </div>
-
-                           
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
-
-                                        <div class=" features_photo">
-                                            <a href="images/05.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/05.jpg" alt=""> </a> </div>
-
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
-                                    </div>
-
-                           
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
-
-                               
-                                        <div class="features_photo">
-                                            <a href="images/blog-1.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/blog-1.jpg" alt=""> </a> </div>
-                                                 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
-                               
 
                                 </div>
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                            
 
-                               
-                                        <div class=" features_photo">
-                                            <a href="images/blog-9.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/blog-9.jpg" alt=""> </a> </div>
+                        <div class="col features_photos-row  main-dish  col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                          
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+                                    <div class=" features_photo">
+                                        <a href="images/bg_1.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/bg_1.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
+                                </div>
+                         
 
-                               
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                        <div class="col features_photos-row  main-dish  col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                    
 
-                                        <div class=" features_photo">
-                                            <a href="images/image_5.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/image_5.jpg" alt=""> </a> </div>
+                                    <div class="features_photo">
+                                        <a href="images/image_1.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/image_1.jpg" alt=""> </a></div>
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
-
+                                </div>
                            
-                                <div class="col  features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
-
-                                    <div class="">
+                        <div class="col features_photos-row  main-dish col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                         
+                                  
                                         <div class=" features_photo">
                                             <a href="images/image_3.jpg" data-lightbox="feedback"
                                                 data-title="See my next picture" class="overlay_feedback">
                                                 <img src="images/image_3.jpg" alt=""> </a> </div>
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+
+                                        <button class="accordion">See more &#10142; </button>
+                                        <div class="panel">
+                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                                aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                                molestiae quaerat praesentium.</p>
+                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                                aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                                molestiae quaerat praesentium.</p>
+                                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                                aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                                molestiae quaerat praesentium.</p>
+                                        </div>
+                                   
+                                </div>
+                           
+
+                        <div class="col features_photos-row  main-dish col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                    
+
+                                    <div class=" features_photo">
+                                        <a href="images/image_6.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/image_6.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                           
+
+                        <div class="col features_photos-row  desserts col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                     
+                                    <div class=" features_photo">
+                                        <a href="images/blog-4.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-4.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                           
+
+                        <div class="col features_photos-row  desserts col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                       
+                                    <div class=" features_photo">
+                                        <a href="images/bg_2.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/bg_2.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                           
+
+                        <div class="col features_photos-row desserts col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                           
+                                    <div class=" features_photo">
+                                        <a href="images/05.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/05.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                         
+                        <div class="col features_photos-row  desserts col-xs-12 col-md-6 col-sm-12 col-lg-6">
+
+                         
+                                    <div class=" features_photo">
+                                        <a href="images/image_4.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/image_4.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
                                 </div>
 
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                           
+                        <div class="col features_photos-row  desserts col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                        
+                                    <div class=" features_photo">
+                                        <a href="images/image_5.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/image_5.jpg" alt=""> </a> </div>
 
-                                 
-                                        <div class=" features_photo">
-                                            <a href="images/image_6.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/image_6.jpg" alt=""> </a> </div>
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
+                                </div>
+                           
 
+                        <div class="col features_photos-row   pizza col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                        
+                                    <div class="features_photo">
+                                        <a href="images/blog-1.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-1.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
                             
 
+                        <div class="col features_photos-row   pizza col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                         
+                                    <div class="features_photo">
+                                        <a href="images/blog-1.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-1.jpg" alt=""> </a> </div>
 
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
 
-                                
-                                        <div class=" features_photo">
-                                            <a href="images/image_4.jpg" data-lightbox="feedback"
-                                                data-title="See my next picture" class="overlay_feedback">
-                                                <img src="images/image_4.jpg" alt=""> </a> </div>
-
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
-                              
+                                </div>
 
-                                <div class="col features_photos col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                          
 
-                                
-                                        <div class=" features_photo">
-                                            <a href="images/bg_1.jpg" data-lightbox="feedback"
-                                                data-title="See my prev picture" class="overlay_feedback">
-                                                <img src="images/bg_1.jpg" alt=""> </a> </div>
+                        <div class="col features_photos-row  pizza col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                 
 
-                                        <a href="foods.html">
-                                            <button id="butt"> See Foods &#10142; </button>
-                                        </a>
+                                    <div class=" features_photo">
+                                        <a href="images/blog-9.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-9.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
                                     </div>
+                                </div>
+                           
 
-                             
+                        <div class="col features_photos-row  pizza col-xs-12 col-md-6 col-sm-12 col-lg-6">
+                   
+
+                                    <div class=" features_photo">
+                                        <a href="images/blog-9.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-9.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                           
+
+                        <div class="col features_photos-row  pizza col-xs-12 col-md-6 col-sm-12 col-lg-6">
+            
+
+                                    <div class=" features_photo">
+                                        <a href="images/blog-9.jpg" data-lightbox="feedback"
+                                            data-title="See my next picture" class="overlay_feedback">
+                                            <img src="images/blog-9.jpg" alt=""> </a> </div>
+
+
+                                    <button class="accordion">See more &#10142; </button>
+                                    <div class="panel">
+                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic
+                                            aliquid earum ipsum, dolorum veniam! Accusantium culpa in porro impedit
+                                            molestiae quaerat praesentium.</p>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+
+                <div class="col  col-xs-12 col-md-3 col-sm-12 col-lg-3">
+                    <div class="row side-bar-photos">
+                        <div class="col  col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                            <div class="side-bar">
+                                <h3> About me</h3>
+                                <img src="images/author.jpg" alt="Athour">
+                                <p>Hi! My name is Cathy Deon, behind the word mountains, far from the countries
+                                    Vokalia
+                                    and Consonantia, there live the blind texts. Separated they live in
+                                    Bookmarksgrove
+                                    right at the coast of the Semantics, a large language ocean.</p>
+                                <div class="search-box">
+                                    <form action="">
+                                        <input type="text" placeholder="Search" class="search">
+                                        <button class="search_button"></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                        <div class="col  side-bar-links col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                            <h3> Categories</h3>
 
-
-                        <div class="col  col-xs-12 col-md-3 col-sm-12 col-lg-3">
-                            <div class="row side-bar-photos">
-                                <div class="col  col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                                    <div class="side-bar">
-                                        <h3> About me</h3>
-                                        <img src="images/author.jpg" alt="Athour">
-                                        <p>Hi! My name is Cathy Deon, behind the word mountains, far from the countries
-                                            Vokalia
-                                            and Consonantia, there live the blind texts. Separated they live in
-                                            Bookmarksgrove
-                                            right at the coast of the Semantics, a large language ocean.</p>
-                                        <div class="search-box">
-                                            <form action="">
-                                                <input type="text" placeholder="Search" class="search">
-                                                <button class="search_button"></button>
-                                            </form>
-                                        </div>
+                            <div class="photo">
+                                <a href="foods.html">
+                                    <img src="images/blog-2.jpg" alt="">
+                                    <div class="photo-text">
+                                        <p>Foods</p>
                                     </div>
-                                </div>
-                                <div class="col  side-bar-links col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                                    <h3> Categories</h3>
-
-                                    <div class="photo">
-                                        <a href="foods.html">
-                                            <img src="images/blog-2.jpg" alt="">
-                                            <div class="photo-text">
-                                                <p>Foods</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-                                    <div class="photo">
-                                        <a href="gallery.html">
-                                            <img src="images/blog-6.jpg" alt="">
-                                            <div class="photo-text">
-                                                <p>Gallery</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-
-                                    <div class="photo">
-                                        <a href="people.html">
-                                            <img src="images/category-2.jpg" alt="">
-                                            <div class="photo-text">
-                                                <p>People whom I am thankful</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                </div>
+                                </a>
                             </div>
+
+
+                            <div class="photo">
+                                <a href="gallery.html">
+                                    <img src="images/blog-6.jpg" alt="">
+                                    <div class="photo-text">
+                                        <p>Gallery</p>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="photo">
+                                <a href="people.html">
+                                    <img src="images/category-2.jpg" alt="">
+                                    <div class="photo-text">
+                                        <p>People whom I am thankful</p>
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         </div>
     </section>
@@ -296,29 +449,29 @@
 
 
     <section class="subscribe-section" id="#">
-        <div id="transcroller-body" class="aos-all">
-            <div class="aos-item" data-aos="fade-up">
-                <div class="container">
-                    <div class="row subscribe">
-                        <div class="col subscribe_part_one col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                            <p class="title_part"> Subcribe to our Newsletter <span>.</span></p>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem temporibus, nihil
-                                nesciunt delectus nobis possimus ipsum harum minima. Non provident qui exercitationem
-                                eveniet reprehenderit, iusto quidem earum recusandae ex similique.</p>
+        <!-- <div id="transcroller-body" class="aos-all">
+            <div class="aos-item" data-aos="fade-up"> -->
+        <div class="container">
+            <div class="row subscribe">
+                <div class="col subscribe_part_one col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                    <p class="title_part"> Subcribe to our Newsletter <span>.</span></p>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem temporibus, nihil
+                        nesciunt delectus nobis possimus ipsum harum minima. Non provident qui exercitationem
+                        eveniet reprehenderit, iusto quidem earum recusandae ex similique.</p>
+                </div>
+                <div class="col col-xs-12 col-md-12 col-sm-12 col-lg-12">
+                    <form action="">
+                        <div class="subscribe-window">
+                            <div class="subscribe-box">
+                                <input type="email" placeholder="Enter email adress" class="subscribe-b"> </div>
+                            <button class="subscribe_button"> Submit </button>
                         </div>
-                        <div class="col col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                            <form action="">
-                                <div class="subscribe-window">
-                                    <div class="subscribe-box">
-                                        <input type="email" placeholder="Enter email adress" class="subscribe-b"> </div>
-                                    <button class="subscribe_button"> Submit </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <!-- </div>
+        </div> -->
     </section>
 
 
@@ -333,13 +486,14 @@
                             there live the blind texts.
                         </p>
                     </div>
-
+  
                     <div class="social-icons">
                         <a href="https://www.instagram.com" target="_blank" class="instagram"></a>
                         <a href="https://www.facebook.com" target="_blank" class="facebook"></a>
                         <a href="https://www.twitter.com" target="_blank" class="twitter"></a>
                     </div>
                 </div>
+         
                 <div class="col inform_menu col-xs-12 col-md-6 col-sm-6 col-lg-6">
                     <p>Have a Question?</p>
                     <div class="info-block">
@@ -374,7 +528,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-
+    <script src="animationCounter.js"></script>
+    <script type="text/javascript" src="dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
     <script src="lightbox.js"></script>
     <script src="app.js"></script>
 </body>
